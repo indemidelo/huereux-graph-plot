@@ -1,0 +1,119 @@
+digraph G {
+
+  subgraph cluster_0 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    Odile -> Simon [label="Madre"]
+    Odile -> Antoine [label="Madre"]
+    Odile -> Robert [label="Coniugi"][dir=none]
+    Robert -> Simon [label="Padre"]
+    Robert -> Antoine [label="Padre"]
+    label = "Romano";
+  }
+  
+  
+  subgraph cluster_1 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    label = "Blot";
+    Ernest -> Jeannette [label="Coniugi"][dir=none]
+    Jeannette -> Odile [label="Madre"]
+
+  }
+  
+  subgraph cluster_2 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    label = "Barnèche";
+    Hélène -> Damien [label="Madre"]
+    Raoul -> Damien [label="Padre"]
+    Hélène -> Raoul [label="Coniugi"][dir=none]
+  }
+  
+  
+  subgraph cluster_3 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    label = "Ehrenfried";
+    Dina -> Jean [label="Coniugi"][dir=none]
+  }
+  
+  subgraph cluster_4 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    label = "Hutner";
+    Lionel -> Jacob [label="Padre"]
+    Pascaline -> Jacob [label="Madre"]
+    Lionel -> Pascaline [label="Coniugi"][dir=none]
+  }
+  
+  subgraph cluster_5 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    label = "Condamine";
+    Luc -> Juliette [label="Padre"]
+    Anne_Laure -> Juliette [label="Madre"]
+    Anne_Laure -> Luc [label="Coniugi"][dir=none]
+  }
+  
+  subgraph cluster_6 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    label = "Zawada";
+    Paulette -> Vincent [label="Madre"]
+  }
+  
+  subgraph cluster_7 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    label = "Écoupaud";
+    Jacques -> Thérèse [label="Coniugi"][dir=none]
+  }
+  
+  Ernest -> Simon [label="Nonno"]
+  Ernest -> Jean [label="Amici"][dir=none][color=darkgreen]
+  Igor -> Chantal [label="Psicanalista"][color=blue]
+  Jacques -> Chantal [label="Amanti"][dir=none][color=red]
+  Anita -> Darius [label="Ex-coniugi"]
+  Albert -> Ernest [label="Autista"][color=blue]
+  Chantal -> Hélène [label="Amiche"][dir=none][color=darkgreen]
+  Igor -> Hélène [label="Amanti"][dir=none][color=red]
+  Igor -> Jacob [label="Psicanalista"][color=blue]
+  Darius -> Jean [label="Amici"][dir=none]
+  
+  Marguerite -> Jeannette [label="Cognate"][dir=none]
+  Robert -> Jeannette [label="Genero"]
+  Jeannette -> Simon [label="Nonna"]
+  Simon -> Jeannette [label="Nipote"]
+  
+  Darius -> Loula [label="Amanti"][dir=none][color=red]
+  Rémi -> Loula [label="Amici"][dir=none][color=darkgreen]
+  Lionel -> Luc [label="Amici"][dir=none][color=darkgreen]
+  Robert -> Luc [label="Amici"][color=green]
+  Ernest -> Marguerite [label="Fratelli"][dir=none]
+  Ernest -> Odile [label="Padre"]
+  Marguerite -> Odile [label="Zia"]
+  Luc -> Paola [label="Amanti"][dir=none][color=red]
+  Odile -> Paola [label="Amiche"][dir=none][color=darkgreen]
+  Philip -> Jean [label="Medico"][color=blue]
+  Virginie -> Philip [label="Segretaria"][color=blue]
+  Albert -> Raoul [label="Fratelli"][dir=none]
+  Yorgos -> Raoul [label="Amici"][dir=none][color=darkgreen]
+  Odile -> Rémi [label="Amanti"][dir=none][color=red]
+  Yorgos -> Rémi [label="Amici"][dir=none][color=darkgreen]
+  Lionel -> Robert [label="Amici"][dir=none][color=darkgreen]
+  Raoul -> Robert [label="Amici"][dir=none][color=darkgreen]
+  Virginie -> Robert [label="Amanti"][dir=none][color=red]
+  Zozo -> Robert [label="Madre"]
+  Virginie -> Vincent [label="Ha una cotta"][color=red]
+  Igor -> Yorgos [label="Amici"][dir=none][color=darkgreen]
+  Philip -> Paulette [label="Medico"][color=blue]
+}
